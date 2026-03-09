@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right,black, blue, yellow);
+}
+
+
+/* heading property */
+h1{
+    border-radius: 7px;
+    font-variant:small-caps;
+    /* background-color: #081b31; */
+    color: #fff;
+    text-align:center;
+    height: 5rem;
+    line-height: 5rem;
+    cursor: pointer;
+    box-shadow:
+    0 2px 25px blue;
+}
+
+/* choice property */
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:
+    1px 0 7px white;
+    border: none;
+
+
+}
+
+.choice:hover{
+    cursor:pointer;
+    background-color:#081b31;
+}
+
+
+/* images property */
+img{
+    height: 150px;
+    width: 150px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+/* parent div choices property */
+.choices{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+/* scoreboard property */
+.score-board{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    gap: 5rem;
+}
+
+#user-score,
+#comp-score{
+    font-size: 4rem;
+}
+
+/* message-container property */
+
+.message-container{
+    margin-top: 5rem;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+#msg{
+    background-color:#081b31;
+    color:#fff;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* highlight a choice briefly when selected */
+.choice.active {
+    box-shadow: 0 0 15px gold;
+    background-color: #444;
+}
+
+.choice.comp-active {
+    box-shadow: 0 0 15px crimson;
+    background-color: #222;
+}
+
+/* controls container */
+.controls {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.controls button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #081b31;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #ddd;
+}
+
